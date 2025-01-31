@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Personal Budget Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#add-expense">Add Expense</a></li>
+                <li><a href="#view-budget">View Budget</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Welcome to the Personal Budget Tracker</h2>
+        <p>This tracker helps you monitor your monthly income and expenses. Input your income and expenses to get an overview of your financial situation.</p>
+    </section>
+
+    <section id="add-expense">
+        <h2>Add Income/Expense</h2>
+        <form>
+            <label for="income">Income:</label>
+            <input type="number" id="income" name="income"><br><br>
+   
+            <label for="expense">Expense:</label>
+            <input type="number" id="expense" name="expense"><br><br>
+   
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+            </select><br><br>
+   
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+   
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="view-budget">
+        <h2>Budget Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data -->
+                <tr>
+                    <td>Food</td>
+                    <td>$100</td>
+                    <td>2025-01-30</td>
+                    <td>Expense</td>
+                </tr>
+                <tr>
+                    <td>Salary</td>
+                    <td>$2000</td>
+                    <td>2025-01-01</td>
+                    <td>Income</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Personal Budget Tracker - Version 1.0</p>
+        <a href="#terms">Terms of Use</a> | <a href="#privacy">Privacy Policy</a>
+    </footer>
+</body>
+</html>
